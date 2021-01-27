@@ -1,1 +1,1 @@
-enum TabEvent { home, search }
+enum TabState { home, search, cart, account }
