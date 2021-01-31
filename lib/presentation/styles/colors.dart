@@ -7,5 +7,8 @@ abstract class AppColors {
 }
 
 abstract class TextColors {
-  static const primaryTitleColor = Color(0xff9098B1);
+  static const primaryColor = AppColors.primaryColor;
+  static const subTitleColor = Color(0xff9098B1);
+  static const darkTitleColor = Color(0xff223263);
+  static const discountColor = Color(0xfffb7181);
 }

@@ -60,6 +60,6 @@ class CircularCategoryWidget extends StatelessWidget {
     return Text(name,
         textAlign: TextAlign.center,
         style: TextStyle(
-            color: TextColors.primaryTitleColor, fontSize: 10, letterSpacing: 0.50));
+            color: TextColors.subTitleColor, fontFamily: "Poppins", fontSize: 10, letterSpacing: 0.50));
   }
 }
