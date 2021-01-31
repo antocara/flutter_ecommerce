@@ -1,5 +1,6 @@
-import 'package:ecommerce/presentation/home/event/tab_event.dart';
-import 'package:ecommerce/presentation/home/state/tab_state.dart';
+
+import 'package:ecommerce/presentation/tab/event/tab_event.dart';
+import 'package:ecommerce/presentation/tab/state/tab_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class TabBloc extends Bloc<TabEvent, TabState> {

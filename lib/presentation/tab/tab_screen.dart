@@ -1,12 +1,13 @@
-import 'package:ecommerce/presentation/home/bloc/tab_bloc.dart';
-import 'package:ecommerce/presentation/home/event/tab_event.dart';
-import 'package:ecommerce/presentation/home/state/tab_state.dart';
+
+import 'package:ecommerce/presentation/tab/bloc/tab_bloc.dart';
+import 'package:ecommerce/presentation/tab/event/tab_event.dart';
+import 'package:ecommerce/presentation/tab/state/tab_state.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 
-class HomeScreen extends StatelessWidget {
+class TabScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<TabBloc, TabState>(
