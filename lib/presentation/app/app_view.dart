@@ -1,5 +1,6 @@
-import 'package:ecommerce/presentation/home/bloc/tab_bloc.dart';
-import 'package:ecommerce/presentation/home/home_screen.dart';
+
+import 'package:ecommerce/presentation/tab/bloc/tab_bloc.dart';
+import 'package:ecommerce/presentation/tab/tab_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
@@ -12,7 +13,7 @@ class AppView extends StatelessWidget {
       title: 'Flutter Demo',
       home: BlocProvider<TabBloc>(
         create: (context) => TabBloc(),
-        child: HomeScreen(),
+        child: TabScreen(),
       ),
     );
     // MaterialApp(
