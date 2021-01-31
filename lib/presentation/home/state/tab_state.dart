@@ -1,0 +1,1 @@
+enum TabState { home, search, cart, account }
