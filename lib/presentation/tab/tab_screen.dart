@@ -1,4 +1,5 @@
 
+import 'package:ecommerce/presentation/home/home_screen.dart';
 import 'package:ecommerce/presentation/tab/bloc/tab_bloc.dart';
 import 'package:ecommerce/presentation/tab/event/tab_event.dart';
 import 'package:ecommerce/presentation/tab/state/tab_state.dart';
@@ -44,7 +45,7 @@ class TabScreen extends StatelessWidget {
   Widget _fetchActiveTab({@required TabState tabState}) {
     switch (tabState) {
       case TabState.home:
-        return Container();
+        return HomeScreen();
       case TabState.search:
         return Container();
       case TabState.cart:
