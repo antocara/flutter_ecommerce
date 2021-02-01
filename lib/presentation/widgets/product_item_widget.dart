@@ -1,4 +1,5 @@
 import 'package:ecommerce/presentation/styles/colors.dart';
+import 'package:ecommerce/presentation/styles/texts.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/widgets.dart';
 
@@ -92,56 +93,22 @@ class ProductItemWidget extends StatelessWidget {
   Widget _title() {
     return SizedBox(
       width: 109,
-      child: Text(
-        name,
-        style: TextStyle(
-          color: TextColors.darkTitleColor,
-          fontSize: 12,
-          fontFamily: "Poppins",
-          fontWeight: FontWeight.w700,
-          letterSpacing: 0.50,
-        ),
-      ),
+      child: Text(name, style: AppText.title),
     );
   }
 
   Widget _price() {
-    return Text(
-      price,
-      style: TextStyle(
-        color: TextColors.primaryColor,
-        fontSize: 12,
-        fontFamily: "Poppins",
-        fontWeight: FontWeight.w700,
-        letterSpacing: 0.50,
-      ),
-    );
+    return Text(price, style: AppText.price);
   }
 
   Widget _priceDiscountText() {
-    return Text(
-      _priceDiscount,
-      style: TextStyle(
-        color: TextColors.subTitleColor,
-        fontSize: 10,
-        letterSpacing: 0.50,
-      ),
-    );
+    return Text(_priceDiscount, style: AppText.priceDiscount);
   }
 
   Widget _discountText() {
     return SizedBox(
       width: 59,
-      child: Text(
-        _discount,
-        style: TextStyle(
-          color: TextColors.discountColor,
-          fontSize: 10,
-          fontFamily: "Poppins",
-          fontWeight: FontWeight.w700,
-          letterSpacing: 0.50,
-        ),
-      ),
+      child: Text(_discount, style: AppText.discount),
     );
   }
 }
