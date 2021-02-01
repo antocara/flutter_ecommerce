@@ -1,7 +1,5 @@
-
-
-
 import 'package:ecommerce/presentation/styles/colors.dart';
+import 'package:ecommerce/presentation/styles/texts.dart';
 import 'package:flutter/widgets.dart';
 
 ///
@@ -14,7 +12,6 @@ import 'package:flutter/widgets.dart';
 ///
 
 class CircularCategoryWidget extends StatelessWidget {
-
   const CircularCategoryWidget({@required this.name, @required this.icon})
       : assert(name != null),
         assert(icon != null);
@@ -57,9 +54,10 @@ class CircularCategoryWidget extends StatelessWidget {
   }
 
   Widget _title() {
-    return Text(name,
-        textAlign: TextAlign.center,
-        style: TextStyle(
-            color: TextColors.primaryTitleColor, fontSize: 10, letterSpacing: 0.50));
+    return Text(
+      name,
+      textAlign: TextAlign.center,
+      style: AppText.priceDiscount,
+    );
   }
 }
